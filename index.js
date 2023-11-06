@@ -11,6 +11,9 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Accept']
 }));
 
+app.get('/', (req, res) => {
+  res.send('Hello World')
+})
 
 app.post('/requestLogin', (req, res) => {
   const clientData = req.body;
